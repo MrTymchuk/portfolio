@@ -1,0 +1,102 @@
+.screen{
+	&.__cover {
+	height:100vh;
+	min-height: 600px;
+	background:url(../images/cover.jpg), #d43b3b 100% 100% no-repeat fixed;
+	background-size: cover;
+	border-top:10px solid #2ecc71;
+	@media (max-width:768px){
+	min-height:500px;
+	max-height:500px;
+	height: 0;
+	}
+		.container {
+	    position: relative;
+	    height: 100%;
+			.company {
+				margin: 133px 0 167px 0;
+				@media (max-width:992px){
+					text-align: center;
+					}
+				@media (max-width:768px){
+					margin: 100px 0 50px 0;
+					}
+				h1 {
+					font-size: 60px;
+					font-family: "Pacifico";
+					color:white;
+					margin:0 0 49px 0;
+					letter-spacing: 1px;
+    				-webkit-font-smoothing: antialiased;
+    				-moz-osx-font-smoothing: grayscale;
+					&:after{
+		   				content:attr(data-end);
+		    			color: #2ecc71;
+		    			}
+		 			@media (max-width:992px){
+						font-size: 56px;
+						}
+				}
+				p.company {
+					font-family: "Helvetica";
+					font-size: 24px;
+					color: #FFF;
+					margin:0;
+					letter-spacing: 0.6px;
+					@media (max-width:992px){
+						font-size: 18px;
+						}
+				}
+				a {
+					display:block;
+				}
+
+				.os{
+					margin: 20px 0 0 0;
+					.icon{
+						color: white;
+						width: 53px;
+						height: 53px;
+						float:left;
+						margin:0 15px 0 0;
+						background:rgba(0,0,0,0.5);
+						border-radius:100%;
+						opacity: .7;
+						transition:.6s;
+						font-size: 55px;
+						line-height:48px;
+						text-decoration: none;
+						text-align: center;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						@media (max-width:992px){
+							float:none;
+							display: inline-block;
+						}
+						&:focus, &:hover{
+							background: #2ecc71;
+							}	
+						&.apple {
+						}
+						&.android{
+						}
+						&.windows {
+							padding:2px 0 0 0;
+						}
+					}
+				}
+			}
+			.hand {
+				background:url(../images/hand.png) no-repeat;
+				min-height: 507px;
+				width: 508px;
+				bottom:0;
+				right:0;
+				position: absolute;
+				@media (max-width:992px){
+					display:none;
+				}
+			}
+		}
+	}
+}
